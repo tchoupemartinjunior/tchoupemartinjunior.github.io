@@ -9,7 +9,7 @@ let afficher = document.getElementById("afficher");
 
 afficher.addEventListener("click",()=>{
 
-let url =https://api.weatherapi.com/v1/current.json?key=fa3298ecc65740a5bb981803220802&q="+ville.value+"&aqi=no";
+let url ="https://api.weatherapi.com/v1/current.json?key=fa3298ecc65740a5bb981803220802&q="+ville.value+"&aqi=no";
 fetch(url)
   .then(resultat=> resultat.json())
   .then(json => {
