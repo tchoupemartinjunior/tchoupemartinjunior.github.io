@@ -8,8 +8,8 @@ let afficher = document.getElementById("afficher");
 
 
 afficher.addEventListener("click",()=>{
-let key = "fdf8a371822fd868f8806e703adacd4e"
-let url ="http://api.weatherstack.com/current?access_key="+key+"&query="+ville.value;
+
+let url =https://api.weatherapi.com/v1/current.json?key=fa3298ecc65740a5bb981803220802&q="+ville.value+"&aqi=no";
 fetch(url)
   .then(resultat=> resultat.json())
   .then(json => {
@@ -19,7 +19,7 @@ fetch(url)
     const hummidity = json.current.humidity;
     console.log(maville); 
     mville.innerHTML=(maville+"-"+country);
-    temperature.innerHTML= "Température : "+(json.current.temperature)+"°C"+'<br>'+"Humidité :"+hummidity+"%";
+    temperature.innerHTML= "Température : "+(json.current.temp_c)+"°C"+'<br>'+"Humidité :"+hummidity+"%";
    
     
   })
