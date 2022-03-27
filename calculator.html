@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="calculator.css" />
+	<title>Calculator</title>
+</head>
+
+<body>
+	<div class="app">
+        <div class="calculator">
+            <div class="Display">{{current}}</div>
+            <div class="btn" @click="clear">C</div>
+            <div class="btn" @click="sign">+/-</div>
+            <div class="btn" @click="percentage">%</div>
+            <div class="btn operator" @click="divide">/</div>
+            <div class="btn" @click="append(7)">7</div>
+            <div class="btn" @click="append(8)">8</div>
+            <div class="btn" @click="append(9)">9</div>
+            <div class="btn operator" @click="times">x</div>
+            <div class="btn" @click="append(4)">4</div>
+            <div class="btn" @click="append(5)">5</div>
+            <div class="btn" @click="append(6)">6</div>
+            <div class="btn operator" @click="minus">-</div>
+            <div class="btn" @click="append(1)">1</div>
+            <div class="btn" @click="append(2)">2</div>
+            <div class="btn" @click="append(3)">3</div>
+            <div class="btn operator" @click="add">+</div>
+			<div class="btn zero" @click="append(0)">0</div>
+            <div class="btn" @click="dot">.</div>
+            <div class="btn operator" @click="equal">=</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+	<script type="text/javascript" src="calculator.js"></script>
+</body>
+
+</html>
