@@ -116,7 +116,7 @@
                             as a full stack developer in a startup, this experience allowed me to gain skills on subjects such as: project management, code versioning, testing and application deployment processes, to name a few.</p>
                         <p>curious and open-minded, I like to discover and learn new technologies. Able to work in a team as well as independently, I am ready to put all my skills at your service.</p>
                         <div>
-                            <button type="button" class="btn btn-dark btn-lg mt-3 justify-content-center">Download my Resume</button>
+                            <a href="portfoilio-cv.pdf"><button type="button" class="btn btn-dark btn-lg mt-3 justify-content-center">Download my Resume</button></a>
                         </div>
                     </div>
                 </div>
@@ -132,7 +132,7 @@
 
                 <div class="section-title">
                     <h2>Skills</h2>
-                    <div class="row">
+                    <div class="row" data-aos="fade-up">
                         <div class="col-md-4">
                             <div class="service-box">
                                 <div class="service-ico">
@@ -141,7 +141,6 @@
                                 <div class="service-content">
                                     <h2 class="s-title">Web & Mobile developement</h2>
                                     <p class="s-description text-center">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.
                                     </p>
                                 </div>
                             </div>
@@ -153,9 +152,7 @@
                                 </div>
                                 <div class="service-content">
                                     <h2 class="s-title">Machine Learning</h2>
-                                    <p class="s-description text-center">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.
-                                    </p>
+
                                 </div>
                             </div>
                         </div>
@@ -166,9 +163,7 @@
                                 </div>
                                 <div class="service-content">
                                     <h2 class="s-title">IoT</h2>
-                                    <p class="s-description text-center">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.
-                                    </p>
+
                                 </div>
                             </div>
                         </div>
@@ -179,10 +174,11 @@
                 </div>
 
 
-                <div class="row skills-content d-flex justify-content-center">
+                <div class="row skills-content d-flex justify-content-center mb-4">
 
+                    <h3 class="text-center mb-4">Web & Mobile Development</h3>
                     <div class="col-lg-4" data-aos="fade-up">
-                        <h3 class="text-center">Front-end</h3>
+
                         <div class="progress" v-for="skill in front_end" :key="skill.id">
                             <span class="skill">{{skill.name}}<i class="val">{{skill.rate}}%</i></span>
                             </span>
@@ -192,7 +188,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4" data-aos="fade-up">
-                        <h3 class="text-center">Back-end</h3>
+
                         <div class="progress" v-for="skill in back_end" :key="skill.id">
                             <span class="skill">{{skill.name}}<i class="val">{{skill.rate}}%</i></span>
                             </span>
@@ -203,6 +199,50 @@
                     </div>
 
                 </div>
+                <div class="row skills-content d-flex justify-content-center">
+
+                    <h3 class="text-center mb-3">IoT & Machine Learning</h3>
+                    <div class="col-lg-4" data-aos="fade-up">
+
+                        <div class="progress" v-for="skill in IoT" :key="skill.id">
+                            <span class="skill">{{skill.name}}<i class="val">{{skill.rate}}%</i></span>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" :aria-valuenow="skill.rate" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-up">
+
+                        <div class="progress" v-for="skill in AI" :key="skill.id">
+                            <span class="skill">{{skill.name}}<i class="val">{{skill.rate}}%</i></span>
+                            </span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" :aria-valuenow="skill.rate" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="row skills-content d-flex justify-content-center">
+
+                <h3 class="text-center mb-3">Tools</h3>
+                <div class="col-lg-4" data-aos="fade-up">
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>VsCode</li>
+                    <li>Jupyter Notebook</li>
+
+                </div>
+                <div class="col-lg-4" data-aos="fade-up">
+                    <li>Mustig</li>
+                    <li>Arduino</li>
+                    <li>Raspberry</li>
+                </div>
+
+            </div>
 
             </div>
 
@@ -216,8 +256,6 @@
 
                 <div class="section-title">
                     <h2>Facts</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
-                        quidem hic quas.</p>
                 </div>
 
                 <div class="row no-gutters">
@@ -233,8 +271,8 @@
                     <div class="col-lg-4 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
                         <div class="count-box">
                             <i class="bi bi-journal-richtext"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
-                            <p><strong>Internship</strong> Full Stack developer intern</p>
+                            <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+                            <p><strong>Internships</strong> Full Stack developer intern</p>
                         </div>
                     </div>
 
@@ -262,20 +300,18 @@
 
                 <div class="section-title">
                     <h2>Education</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
-                        quidem hic quas.</p>
                 </div>
 
 
 
                 <div class="row">
-                    <div class="col-lg-4"></div>
+                    <div class="col-lg-2"></div>
                     <div class="col-lg-8">
 
                         <div class="resume-item">
-                            <h4>Computer Science engineer - Embedded Systems</h4>
+                            <h4>Computer Science engineer (Master 2) - real-time architecture and embedded systems</h4>
                             <h5>2022 - 2023</h5>
-                            <p><em>Le Mans engeneering school, Le Mans, France</em></p>
+                            <p><em>ENSIM-Le Mans school of engeneering, Le Mans, France</em></p>
                             <div class="row">
                                 <div class="col-lg-4">
                                     <li>Embedded software</li>
@@ -290,10 +326,19 @@
                         </div>
 
                         <div class="resume-item">
-                            <h4>Computer Science engineer - persons systems interface</h4>
+                            <h4>Computer Science engineer (Master 1) - person-to-system interface</h4>
                             <h5>2020 - 2022</h5>
-                            <p><em>Le Mans engeneering school, Le Mans, France</em></p>
-                            <p> - Web and mobile application development - UI/UX design - Information Systems Architecture - Artificial intelligence</p>
+                            <p><em>ENSIM-Le Mans school of engeneering , Le Mans, France</em></p>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <li>Web & mobile development</li>
+                                    <li>UI/UX design</li>
+                                    <li>Information Systems Architecture</li>
+                                </div>
+                                <div class="col-lg-4">
+                                    <li>Artificial intelligence</li>
+                                </div>
+                            </div>
                         </div>
                         <div class="resume-item">
                             <h4>bachelor's degree in physics</h4>
@@ -301,7 +346,7 @@
                             <p><em>University institute of the coast, Douala, Cameroon</em></p>
                         </div>
                         <div class="resume-item">
-                            <h4>Wirtschaft Mathematik</h4>
+                            <h4>Economics Mathematics</h4>
                             <h5>2016 - 2017</h5>
                             <p><em>Ludwig maximilian universitaet, Munich, Germany</em></p>
                         </div>
@@ -311,7 +356,7 @@
                             <p><em>Etoile bilingual college, Douala, Cameroon</em></p>
                         </div>
                     </div>
-                    <div class="col-lg-4"></div>
+                    <div class="col-lg-2"></div>
                 </div>
             </div>
             </div>
@@ -322,17 +367,25 @@
                     <h2>Professional Experience</h2>
                     <div class="row">
 
-                        <div class="col-lg-4"></div>
-                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
                             <h3 class="resume-title">Professional Experience</h3>
 
                             <div class="resume-item">
-                                <h4>Full Stack developer Intern</h4>
+                                <h4>Full Stack developer - Technical Internship</h4>
                                 <h5>July - August 2022</h5>
                                 <p><em>World like Home, Le Mans, France</em></p>
                                 <ul>
                                     <li>Development of an online payment plugin, integrated on "Discourse" (open source software for discussion forums). #Ruby_on_Rails, #Ember Js, #Stripe Js, #Linux</li>
                                     <li>Development of a Question and Answer Chat Bot. #Python, #Haystack, #ElasticSearch, #Hugging Face</li>
+                                </ul>
+                            </div>
+                            <div class="resume-item">
+                                <h4>automobile production worker - work placement</h4>
+                                <h5>July - August 2021</h5>
+                                <p><em>Gestamp Sofedit, Le Theil, France</em></p>
+                                <ul>
+                                    <li>Assembly of automotive parts</li>
                                 </ul>
                             </div>
                         </div>

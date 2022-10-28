@@ -1,0 +1,29 @@
+body {
+    margin: 0 auto;
+    background: url('../assets/img/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.icon {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.zone {
+    margin-right: 30px;
+}
+
+.date {
+    display: inline-block;
+}
+
+.temperature {
+    font-size: 70px;
+    text-align: center;
+}

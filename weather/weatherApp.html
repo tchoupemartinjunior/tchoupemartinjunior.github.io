@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link href="weather.css" rel="stylesheet">
+    <link rel="icon" href="img/app_icon.png">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <button class="btn  btn-warning" type="button" @click="getWeather">Search</button>
+                        <input type="text" @keyup.enter="getWeather" class="form-control" placeholder="Enter a City" v-model="city">
+                    </div>
+                    <div id="weather-container">
+                        <p class="h1 text-center">{{weather.location.name}}, {{weather.location.country}}</p>
+                        <p class="h3 text-left">{{weather.location.localtime}} <br>Time zone : <span>{{weather.location.tz_id}}</span></p>
+
+                        <p class="temperature">{{weather.current.temp_c}}°C</p>
+                        <p class="h1 text-center">{{condition.text}}</p>
+                        <div class="icon">
+                            <span class="zone"><i class="fa fa-tint fa-3x"></i><span class="h3">{{weather.current.humidity}}%</span></span>
+                            <span class="zone"><i class="fa fa-cloud fa-3x"></i><span class="h3">{{weather.current.cloud}}%</span></span>
+                            <span class="zone"><i class="fa fa-sun fa-3x"></i><span class="h3">{{weather.current.uv}}hpa</span></span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script type="text/javascript" src="weather.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

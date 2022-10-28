@@ -1,4 +1,5 @@
 const base_url = "https://tchoupemartinjunior.github.io/";
+const base_url2 = "https://github.com/tchoupemartinjunior/"
 var app = new Vue({
     el: '#portfolio',
     data: {
@@ -28,10 +29,10 @@ var app = new Vue({
                 id: 1,
                 nom: 'TELEGRAMM CHATBOT',
                 technos: 'Spring Boot',
-                url: 'https://avossevou.eu/',
+                url: base_url2 + 'TelegramSpringAPI',
                 img: 'assets/img/portfolio/chatbot.jpg',
                 more_images: [],
-                description: 'Showcase website of the secure fleet project',
+                description: 'Gives the weather condition of the town and also give jokes, depending on the message recieved from the user ',
                 date: 'May 2022'
 
             },
@@ -39,56 +40,68 @@ var app = new Vue({
                 id: 2,
                 nom: 'Covid data visualisation',
                 technos: 'CHARTS JS, VUE JS, HTML , CSS, BOOTSTRAP',
-                url: base_url + '/covid-app/covid.html',
+                url: base_url + 'covid-app/covid.html',
                 more_images: [],
                 description: "Statistics of the number of covid cases per country",
-                img: 'assets/img/portfolio/covid_data.jpg'
+                img: 'assets/img/portfolio/covid_data.jpg',
+                date: 'October 2021'
             },
 
             {
                 id: 1,
                 nom: 'Car & Pedestrian detection',
                 technos: 'PYTHON, OPENCV',
-                url: 'https://avossevou.eu/',
+                url: base_url2 + 'Car-detection-App',
                 img: 'assets/img/portfolio/car-detection.jpg',
                 more_images: [],
-                description: 'Tracking application for cars, real-time display of GPS position, speed, and engine status',
-                date: 'June 2022'
+                description: 'Detection of cars and pedestrians using artificial intelligence',
+                date: 'March 2022'
 
             },
             {
                 id: 1,
                 nom: 'Face detection',
                 technos: 'PYTHON, OPENCV',
-                url: 'https://avossevou.eu/',
+                url: base_url2 + 'Face-recognition-App-with-Pyhton-OpenCV',
                 img: 'assets/img/portfolio/face-detection.jpg',
                 more_images: [],
                 description: 'Face detection application',
-                date: 'June 2022'
+                date: 'March 2022'
 
             },
             {
                 id: 3,
                 nom: 'Weather App',
                 technos: 'VUE JS, HTML , CSS, BOOTSTRAP',
-                url: base_url + '/weather/weatherApp.html',
+                url: base_url + 'weather/weatherApp.html',
                 more_images: [],
-                img: 'assets/img/portfolio/weather.jpg'
+                img: 'assets/img/portfolio/weather.jpg',
+                date: 'October 2021'
             },
             {
                 id: 4,
                 nom: 'Deezer',
                 technos: 'IONIC VUE JS',
-                url: base_url + '/DeezerApp-Ionic_VueJs',
+                url: base_url2 + 'DeezerApp-Ionic_VueJs',
+                description: 'Music mobile app',
                 more_images: [],
                 img: 'assets/img/portfolio/deezer1.jpg'
+            },
+            {
+                id: 2,
+                nom: 'Address Localisation app',
+                technos: 'SPRING BOOT',
+                url: base_url2 + 'GPS-Weather-App',
+                more_images: [],
+                description: "Finds the gps position of an address and at the same time the weather conditions at this place",
+                img: 'assets/img/portfolio/covidChart.png'
             },
 
             {
                 id: 4,
                 nom: 'Calculatrice',
                 technos: ' HTML , CSS, BOOTSTRAP',
-                url: 'calculator/calculator.html',
+                url: base_url + 'calculator/calculator.html',
                 more_images: [],
                 img: 'assets/img/portfolio/calculator.png'
             },
@@ -96,19 +109,11 @@ var app = new Vue({
                 id: 4,
                 nom: 'To-do list',
                 technos: 'HTML, CSS , JAVASCRIPT',
-                url: 'to-do/todo.html',
+                url: base_url + 'to-do/todo.html',
                 img: 'assets/img/portfolio/todo.png'
             },
 
-            {
-                id: 2,
-                nom: 'Address Localisation app',
-                technos: 'SPRING BOOT',
-                url: 'covid-app/covid.html',
-                more_images: [],
-                description: "Gives the gps position of an address and at the same time the weather conditions at this place",
-                img: 'assets/img/portfolio/covidChart.png'
-            },
+
 
         ]
 
@@ -142,6 +147,11 @@ var skills_vue = new Vue({
                 rate: 60,
             },
             {
+                id: 4,
+                name: 'Kotlin',
+                rate: 40,
+            },
+            {
                 id: 5,
                 name: 'Wordpress (cms)',
                 rate: 80,
@@ -169,6 +179,36 @@ var skills_vue = new Vue({
                 name: 'Mysql, postgresql',
                 rate: 70,
             },
+        ],
+        IoT: [{
+                id: 1,
+                name: 'Digital Telecommunication',
+                rate: 70,
+            },
+            {
+                id: 1,
+                name: 'Digital an analog electronics',
+                rate: 50,
+            },
+            {
+                id: 1,
+                name: 'Signal processing',
+                rate: 30,
+            },
+
+
+        ],
+        AI: [{
+                id: 1,
+                name: 'Python',
+                rate: 70,
+            },
+            {
+                id: 1,
+                name: 'Opencv',
+                rate: 40,
+            }
+
         ]
 
     },

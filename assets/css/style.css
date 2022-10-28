@@ -107,6 +107,7 @@ h6 {
 
 #navbarSupportedContent .nav-link {
     margin-left: 10px;
+    font-size: 14px;
 }
 
 #navbarSupportedContent .nav-link:hover {
@@ -211,8 +212,7 @@ section {
 }
 
 .section-title {
-    padding-bottom: 30px;
-    border-bottom: #122f57;
+    padding-bottom: 20px;
 }
 
 .section-title h2 {
@@ -223,7 +223,6 @@ section {
     position: relative;
     color: #173b6c;
     text-align: center;
-    border-bottom: 1px solid;
 }
 
 .section-title p {
@@ -340,7 +339,7 @@ section {
 .service-box:hover .ico-circle {
     transition: all 500ms ease;
     color: #fff;
-    background-color: #0078ff;
+    background-color: #2b2e31;
     box-shadow: 0 0 0 10px #cde1f8;
 }
 
