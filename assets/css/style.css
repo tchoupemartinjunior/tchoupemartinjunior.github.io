@@ -105,10 +105,6 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 
-#navbarSupportedContent {
-    height: 40px;
-}
-
 #navbarSupportedContent .nav-link {
     margin-left: 10px;
 }
