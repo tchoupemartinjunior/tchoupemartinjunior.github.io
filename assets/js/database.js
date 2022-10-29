@@ -42,7 +42,7 @@ var app = new Vue({
                 technos: 'CHARTS JS, VUE JS, HTML , CSS, BOOTSTRAP',
                 url: base_url + 'covid-app/covid.html',
                 more_images: [],
-                description: "Statistics of the number of covid cases per country",
+                description: "Statistics on the number of covid cases by country",
                 img: 'assets/img/portfolio/covid_data.jpg',
                 date: 'October 2021'
             },
@@ -88,29 +88,30 @@ var app = new Vue({
                 img: 'assets/img/portfolio/deezer1.jpg'
             },
             {
+                id: 4,
+                nom: 'Calculatrice',
+                technos: ' HTML , CSS, BOOTSTRAP',
+                url: base_url + 'calculator/calculator.html',
+                more_images: [],
+                img: 'assets/img/portfolio/calculatrice.jpg'
+            },
+            {
                 id: 2,
                 nom: 'Address Localisation app',
                 technos: 'SPRING BOOT',
                 url: base_url2 + 'GPS-Weather-App',
                 more_images: [],
                 description: "Finds the gps position of an address and at the same time the weather conditions at this place",
-                img: 'assets/img/portfolio/covidChart.png'
+                img: 'assets/img/portfolio/geoloc.jpg'
             },
 
-            {
-                id: 4,
-                nom: 'Calculatrice',
-                technos: ' HTML , CSS, BOOTSTRAP',
-                url: base_url + 'calculator/calculator.html',
-                more_images: [],
-                img: 'assets/img/portfolio/calculator.png'
-            },
+
             {
                 id: 4,
                 nom: 'To-do list',
                 technos: 'HTML, CSS , JAVASCRIPT',
                 url: base_url + 'to-do/todo.html',
-                img: 'assets/img/portfolio/todo.png'
+                img: 'assets/img/portfolio/to-do.jpg'
             },
 
 

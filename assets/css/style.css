@@ -287,7 +287,7 @@ section {
 .facts .count-box i {
     display: block;
     font-size: 44px;
-    color: #149ddd;
+    color: #1e1e1e;
     float: left;
     line-height: 0;
 }
@@ -429,6 +429,13 @@ section {
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 18px;
+}
+
+.skills .tools {}
+
+.skills .tools .tool-list {
+    padding-right: 0px;
+    width: auto;
 }
 
 
